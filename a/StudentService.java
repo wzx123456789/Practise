@@ -24,6 +24,7 @@ public class StudentService implements IStudentService {
 	@Override
 	public List<Student> findStudents(String studName, String studNo) {
 		log.debug("findStudents method started!");
+		log.debug("findVersions method started!");
 		return studentDAO.findByHqlWhere(StudentPack.packStudentQuery(studName,
 				studNo));
 	}
@@ -38,7 +39,7 @@ public class StudentService implements IStudentService {
 
 		Student student = new ab();
 		student.setId(id);
-		studentDAO.remove(student);
+		studentDAO.remove(version);
 	}
 
 	@Override
