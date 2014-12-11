@@ -35,6 +35,7 @@ public class StudentService implements IStudentService {
 
 	@Override
 	public void deleteStudent(Long id) {
+
 		Student student = new ab();
 		student.setId(id);
 		studentDAO.remove(student);
