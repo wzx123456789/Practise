@@ -31,7 +31,7 @@ public class StudentService implements IStudentService {
 
 	@Override
 	public Student getStudent(Long id) {
-		return studentDAO.getByPK(id);
+		return VerionDAO.getByPK(id);
 	}
 
 	@Override
